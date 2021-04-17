@@ -1,0 +1,329 @@
+/*
+
+@author: Saurabh Shukla
+@email-id: ss7586@rit.edu
+@Course: ISTE-646 (Foundations of Web Technologies)
+@Term: Spring 2021
+@File name: style.css
+
+*/
+
+
+
+/* to set up box sizing */
+* {
+  box-sizing: border-box;
+  
+}
+
+/* to set up body styling */
+body {
+  font-family: "Trebuchet MS", Tahoma, Verdana;
+  margin-left: 1%;
+  margin-right: 1%;
+  border: 1px solid gray;
+  padding-left: 1em;
+  padding-right: 1em;
+   
+}
+
+/* to set up logo of website (left + Right) */
+.bannerImageL{
+
+  float: left;
+  padding-left: 20px;
+  
+  }
+
+  .bannerImageR{
+
+    float: right;
+    padding-right: 20px;
+    
+    }
+
+/* to set up global table styling  */
+
+table {
+  width:100%;
+}
+table, th, td {
+  border: 1px solid rgb(0, 0, 0);
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+  text-align: center;
+}
+#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+#t01 tr:nth-child(odd) {
+ background-color: #fff;
+}
+#t01 th {
+  background-color: rgb(216, 125, 50);
+  color: white;
+}
+
+/* to set up mouse hover property  */
+
+dd:hover {
+  color: red;
+}
+
+/* to set up zoom in property */
+
+.zoomin img {
+  height: 200px;
+  width: 300px;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  transition: all 2s ease;
+}
+.zoomin img:hover {
+  width: 400px;
+  height: 250px;
+}
+
+.zoom {
+  transition: transform .2s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  float: right;
+  margin-right: 390px;
+  margin-top: 20px;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+
+/* to set up Pie chart styling */
+
+#piechart{
+
+  align-items: center;
+}
+
+.column {
+  float: left;
+  width: 20%;
+  padding: 0 10px;
+}
+
+.row {margin: 0 -5px;}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* to set up card layout styling */
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+
+/* to set up header styling */
+
+h1{
+    font-family: "ALGERIAN", Tahoma, Verdana;
+    background-color:lightgoldenrodyellow;
+    text-align: center;
+    padding-bottom:5px;
+    padding-top:5px;
+    color: brown;
+    border: 5px solid rgb(187, 174, 145); 
+
+     
+}
+
+/* to set up cpation positioning */
+.glen-cap{
+  text-align: center;
+}
+
+/* to set up image positioning */
+.right_next{
+  float: right;
+  margin: 0.7em;
+}
+
+.left_next{
+  float: left;
+  margin: 0.7em;
+}
+
+
+/* to set up unoreder list positioning */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:rgb(17, 17, 17);
+}
+
+li {
+  float: left;
+  border-right:1px solid #111;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(141, 81, 81);
+}
+
+.active {
+  background-color: #47c7b6;
+}
+.top
+{
+text-align: right;
+
+}
+
+.span_color{
+
+  background-color:  burlywood;
+  
+}
+
+
+.home_profile{  
+  padding-left: 1em; 
+
+}
+
+.right {
+  display: block;
+  margin-left: 50%;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* to set up navigation bar styling */
+
+.navigation{
+
+  font-family: "Trebuchet MS", Tahoma, Verdana;
+  margin-left: 0%;
+  margin-right: 0%;
+  border: 1px solid gray;
+  padding-left: 1px;
+  padding-right: 1px;
+  background-color: burlywood;
+  border-right:1px solid #bbb;
+ }
+
+ h3{
+background-color:mistyrose;
+width: 100%;
+margin-right: auto;
+margin-left: auto;
+
+ }
+
+ /* to set up copyright styling */
+ .copyright{
+  background-color: burlywood;
+  text-align: center;
+  font-size: 110%;
+  }
+
+  .social{
+   
+    margin-left: 0%;
+    margin-right: 0%;
+    white-space: initial;
+    padding-left: 1px;
+    padding-right: 1px;
+
+
+  }
+
+  .cite{
+
+    background-color:khaki;
+    font-size: 110%;
+    color:indianred;
+    width: 975px;
+
+  }
+
+  .profile{
+    background-color:mistyrose ;
+  }
+
+
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+ 
+
+[class*="col-"] {
+  width: 100%;
+}
+
+
+
+/* to set up media query */
+@media only screen and (max-width: 1100px) {
+ 
+ 
+  body {
+    
+  }
+  img.responsive_img { width: 450px; height: 200px;}
+  img.responsive_img_1 { width: 150px; height: 100px;}
+  img.responsive_img_2 { width: 150px; height: 100px;}
+  img.responsive_img_3 { width: 450px; height: 200px;}
+  
+}
+
+
+@media only screen and (max-width: 700px) {
+ 
+ 
+  body {
+   
+  }
+  img.responsive_img { width: 250px; height: 100px;}
+  img.responsive_img_1 { width: 100px; height: 70px;}
+  img.responsive_img_2 { width: 100px; height: 70px;}
+  img.responsive_img_3 { width: 250px; height: 100px;}
+  
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}

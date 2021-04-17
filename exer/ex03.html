@@ -1,0 +1,78 @@
+
+<!-- Saurabh Shukla, ISTE-646, Spring 2021  (ex03.html) -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>A Web Page</title>
+        <!-- meta tag for media quesry and external style sheet connect-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../exer/assets/css/style03.css" rel="stylesheet" >
+    </head>
+    <body>
+     
+        <!-- outside division -->
+        <div class="outside"> 
+             <!-- to set up left side banner image -->
+            <div class="bannerImage">
+                <img src="assets/images/logo_ex03.png" alt="logo" width="250" height="150">
+            </div>
+            <br>
+           <!-- to set up header using list -->
+            <ul>
+                <li><a href="">Home</a></li>
+                <li> <a href="">Activities</a></li>
+                <li> <a href="">Food</a></li>
+                <li> <a href="">Rest</a></li>
+                <li> <a href="">People</a></li>
+                <li> <a href="">Feedback</a></li>
+            </ul>
+            
+        
+        
+            <br><br><br>
+        <h1 class="titlepart"> Please tell us about your visit:</h1>
+
+         <!-- to set up horizontal break line -->
+        <hr class="hr_line">
+
+
+        <!-- to set up Form for user input -->
+        <form method="GET" action="ex03.html">
+            <div class="contentD"><br>
+            <label class="label1">How many in your group?</label>
+            <input type="number" name="howMany" min="1" max="10"><br><br>
+            <label class="label1">When did you Visit?</label>
+            <input type="date" name="whenVisit"><br><br>
+
+            <!-- to set up radio group fields -->
+            <fieldset class="label2">
+                <legend>Favorite Place:</legend>
+                <input type="radio" id="bf" name="Favorite_Place" value="Baseball Field">
+                <label >Baseball Field</label><br>
+                <input type="radio" id="mf" name="Favorite_Place" value="Museum">
+                <label >Museum</label><br>
+                <input type="radio" id="lif" name="Favorite_Place" value="Luigis Italian">
+                <label >Luigis Italian </label><br>
+                <input type="radio" id="mhf" name="Favorite_Place" value="Mom's Hotel">
+                <label >Mom's Hotel</label><br>
+                <input type="radio" id="yhf" name="Favorite_Place" value="The Youth Hostel">
+                <label >The Youth Hostel</label><br>
+               </fieldset><br><br>
+            <label  class="label1">Overall rate your visit to our small town:</label><br><br>
+            <label  class="label1">0  </label>
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" name="rate">
+            <label  class="label1"> 10</label><br><br>
+
+            <!-- to set up submit button -->
+            <input type="submit" value="Submit" class="button">
+
+
+             </div>
+        </form>
+<!-- End of form  -->
+        
+        </div>
+            
+    </body>
+</html>

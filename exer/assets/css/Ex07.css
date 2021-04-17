@@ -1,0 +1,18 @@
+/*
+     Saurabh Shukla 
+     04/10/2021 
+     ISTE646 Exercise 7 – PHP – Part 2 - MySQL 
+
+ */
+ 
+ /* to set up body properties to override default settings */
+
+ body {
+    margin-left:100px;
+    font-family: "Trebuchet MS", Tahoma, Verdana;
+    border: 5px solid blue;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: lightgray;
+  
+  }

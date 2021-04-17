@@ -1,0 +1,170 @@
+
+/* Saurabh Shukla, ISTE-646, Spring 2021   (style.css)  */
+
+/* to set up margin and padding of page */
+
+
+.body .html{
+  margin: 0;
+  padding: 0;
+}
+
+/* left side image placement  */
+
+.bannerImage{
+  background-image:url("../images/side.jpg");
+  background-repeat: repeat-y;
+  display: block;  
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* individual box section and set up */
+.box{
+  width: 200px;
+  height: 200px;
+  background-color:darkgreen;
+
+}
+
+/* hovering effect and cursor to hand */
+
+.box:hover{
+  background-color: purple;
+  cursor: pointer;
+}
+
+/* 
+Positioning attributes of flower
+*/
+
+.box .flowername{
+  color: violet;
+  font-size: 30px;
+  position: relative;
+   
+}
+
+/* asterisks */
+.star{
+  color:yellowgreen;
+  font-size: 120px;
+  position:relative;
+  text-shadow: 5px 2px yellow;
+  top: 5px;
+  left: 10px;
+}
+
+/* setting attributes of box group */
+
+.bannerImage{
+
+  width: 100px;
+  height: 830px;
+  z-index: 2;
+}
+
+
+.box .flowername{
+
+  left: 50px;
+  bottom: 65px;
+  font-weight: bold;
+
+}
+
+.box{
+
+  border-radius: 30px;
+  margin: 15px;
+  transition-duration: 3s;
+}
+
+
+
+/* main conatainer to display flex-box */
+
+.main-box{
+  display: flex;
+}
+
+
+/* display of box section ( 4 block section) */
+
+.section{
+  display: flex;
+}
+
+
+/* Media quesry as per requirement */
+
+@media all and (max-width:601px) and (min-width:500px){
+
+  .image{
+   
+    height: 100px;
+}
+
+ 
+/*
+  .box{
+    width: 200px;
+    height: 200px;
+    background-color:darkgreen;
+    border-radius: 30px;
+  }
+  */
+
+  .section{
+    display: block;
+}
+
+}
+
+@media all and (max-width:601px){
+
+
+  .image{
+    height: 900px;
+}
+    
+/*
+  .box{
+    width: 200px;
+    height: 200px;
+    background-color:darkgreen;
+    border-radius: 30px;
+  }
+  */
+
+  .section{
+    display: block;
+}
+  
+}
+
+
+@media all and (max-width:500px){
+
+  .image{
+    display: none;
+    height: 900px;
+}
+ 
+/*
+  .box{
+    width: 200px;
+    height: 200px;
+    background-color:darkgreen;
+    border-radius: 30px;
+  }
+  */
+
+  .section{
+    display: block;
+}
+}
+

@@ -1,0 +1,130 @@
+
+/* Saurabh Shukla, ISTE-646, Spring 2021   (style3.css)  */
+
+
+
+/* to set up body font family */
+
+body {
+  font-family: "Trebuchet MS", Tahoma, Verdana;
+     
+            
+}
+
+/* to set up image on left side */
+
+.bannerImage{
+
+float: left;
+padding-left: 20px;
+
+}
+
+/* the unorder list setup */
+
+  ul {
+    list-style-type: none;
+    text-align: center;
+    border: 5px solid grey;
+    margin-left: 22%;
+    margin-right: 22%;
+  }
+  
+
+  /* to set up header list */
+  li {
+    
+    display:inline;
+    border-right:2px solid #bbb;
+    
+  }
+  
+  li a {
+    display:inline-block;
+    color: black;
+    padding: 10px 6px;
+    
+  }
+
+.titlepart {
+text-align: center;
+color: darkslateblue;
+}
+
+/* to set up horizontal line */
+
+.hr_line{
+
+  height: 2px;
+  width: 50%;
+  color: gray;
+  background-color: gray;
+  border-width: 0;
+}
+
+/* to set up lables */
+.label1{
+
+color: dodgerblue;
+font-weight: bolder;
+
+}
+
+.label2{
+  color: dodgerblue;
+  font-weight: bolder;
+  text-align: left;
+}
+
+.contentD {
+  text-align: center;
+}
+
+/* to set up slider range property */
+.slider {
+  -webkit-appearance: none;
+  width: 15%;
+  height: 3px;
+  background: #d3d3d3;
+
+
+}
+
+
+.slider::-webkit-slider-thumb {
+
+  appearance: none;
+  width: 9px;
+  height: 15px;
+  background: black;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+/* to set up button property */
+.button{
+
+  background-color:dodgerblue;
+  color: white;
+}
+
+fieldset {
+  background-color:lightcyan;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+legend {
+
+  color: black;
+  font-weight: bolder;
+  
+}
+
+input {
+  margin: 5px;
+}
